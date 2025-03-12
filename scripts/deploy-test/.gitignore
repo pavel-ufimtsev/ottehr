@@ -8,3 +8,4 @@ deploy-config.json
 .cdk.staging
 cdk.out
 config.json
+pavel.deploy-config.json
