@@ -3,7 +3,7 @@ import { AppBar, Container, Tab, Toolbar, useTheme, useMediaQuery } from '@mui/m
 import { ReactElement, SyntheticEvent, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { RoleType } from 'utils';
-import logo from '../../assets/logo-4x.png';
+import logo from '../../assets/ls-logo.svg';
 import { otherColors } from '../../CustomThemeProvider';
 import useEvolveUser from '../../hooks/useEvolveUser';
 import { AppTab, useNavStore } from '../../state/nav.store';

@@ -7,6 +7,7 @@ import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-d
 import { MixpanelContextProps, ScrollToTop, setupMixpanel, setupSentry } from 'ui-components';
 import { IntakeThemeProvider } from './IntakeThemeProvider';
 import { BookingHome, GetReadyForVisit, NewUser, Reschedule, Version } from './pages';
+import HelloWorld from './pages/HelloWorld';
 import Appointments from './pages/Appointments';
 import AuthPage from './telemed/pages/AuthPage';
 import CallEndedPage from './telemed/pages/CallEndedPage';
@@ -331,6 +332,7 @@ function App(): JSX.Element {
             <IOSMessagesHandler />
             <Routes>
               <Route path={'/version'} element={<Version />} />;
+              <Route path="/hello" element={<HelloWorld />} />
               <Route path={'/redirect'} element={intakeFlowPageRoute.AuthPage.getPage()} />;
               <Route path={intakeFlowPageRoute.AuthPage.path} element={intakeFlowPageRoute.AuthPage.getPage()} />
               <Route path={intakeFlowPageRoute.Welcome.path} element={intakeFlowPageRoute.Welcome.getPage()} />
